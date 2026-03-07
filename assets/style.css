@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+body{
+    background: #1d3557;
+    color: aliceblue;
+    font-family: "PT Serif", serif;
+}
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+ li{
+    list-style: none;
+ }
+.logo{
+    color: #a3b18a;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+.hero{
+    height: 100vh;
+}
+.hero-container{
+    text-align: center;
+    margin-top: 3em;
+}
+.intro{
+   color: #a3b18a;
+   margin-bottom: 10px;
+   font-size: 25px;
+}
+.hero-container h2{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.descricao{
+    font-size: 23px;
+    color: #a3b18a;
+}
+#sobre{
+    height: 100vh;
+    padding: 1em;
+}
+#sobre h2{
+    color: #a3b18a;
+    text-align: center;
+    margin: auto;
+
+}
+.sobre-conteudo{
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+.sobre-conteudo .sobre-texto{
+    flex: 1;
+}
+.sobre-conteudo .sobre-formacao{
+    flex-direction: 1;
+}
+.sobre-texto p{
+    color: #a3b18a;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.sobre-dados{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sobre-dados div{
+    text-align: center;
+
+}
+.sobre-dados strong{
+    display: block;
+    font-size: 2em;
+    color:#a3b18a ;
+}
+.sobre-dados span{
+    font-size: 1em;
+    color: #9ca3af;
+}
