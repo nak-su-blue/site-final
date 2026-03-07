@@ -64,8 +64,9 @@ body{
 }
 .sobre-conteudo{
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .sobre-conteudo .sobre-texto{
     flex: 1;
@@ -95,4 +96,16 @@ body{
 .sobre-dados span{
     font-size: 1em;
     color: #9ca3af;
+}
+#projetos{
+    min-height: 100vh;
+}
+.projetos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.projeto-card{
+    background: #020617;
+    padding: 20px;
 }
