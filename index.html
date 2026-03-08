@@ -10,7 +10,8 @@
     <header class="hero">
        <nav class="navbar">
         <h1 class="logo">DevPortifólio</h1>
-        <ul class="menu">
+        <button id="hamburguer">☰</button>
+        <ul class="menu" id="menu">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
@@ -40,15 +41,15 @@
             </p>
             </div>
         <div class="sobre-dados">
-            <div>
+            <div class="item-dados">
                 <strong>5+</strong>
                 <span>Projetos Concluídos</span>
             </div>
-            <div>
+            <div class="item-dados">
                 <strong>1+</strong>
                 <span>Anos de experiência</span>
             </div>
-            <div>
+            <div class="item-dados">
                 <strong>4+</strong>
                 <span>tecnologia</span>
             </div>
@@ -59,26 +60,78 @@
         <h2>Meus projetos</h2>
         <div class="projetos-container">
             <div class="projeto-card">
-                <img src="" alt="">
-                <h3>E-commerce</h3>
+                <img src="assets/img-site-final.jpg" alt="">
+                <h2>E-commerce</h3>
                 <p>"Plataforma Simples com html, css e javascript."</p>
-                <a href="#">Ver projeto-card</a>
+                <a href="#">Ver projeto</a>
             </div>
               <div class="projeto-card">
-                <img src="" alt="">
-                <h3>Gerenciador de Tarefas</h3>
+                <img src="assets/img-site-final.jpg" alt="">
+                <h2>Gerenciador de Tarefas</h3>
                 <p>"Aplicação para gerenciamento de tarefas."</p>
-                <a href="#">Ver projeto-card</a>
+                <a href="#">Ver projeto</a>
             </div>
               <div class="projeto-card">
-                <img src="" alt="">
-                <h3>APP de finanças</h3>
+                <img src="assets/img-site-final.jpg" alt="">
+                <h2>APP de finanças</h3>
                 <p>"Aplicativo para gerenciamento de finanças pessoais."</p>
-                <a href="#">Ver projeto-card</a>
+                <a href="#">Ver projeto</a>
             </div>
-
-        </div>
-
+         </div>
     </section>
+    <section id="habilidades">
+        <h2>Habilidades técnicas</h2>
+        <p>
+            Tecnologias e ferramentas que utilizo para desenvolver soluções completas
+        </p>
+        <div class="habilidades-lista">
+            <div class="habilidades-card">
+                <h3>Html</h3>
+                <span>Avançado</span>
+            </div>
+            <div class="habilidades-card">
+                <h3>Css</h3>
+                <span>Avançado</span>
+            </div>
+            <div class="habilidades-card">
+                <h3>javascript</h3>
+                <span>Avançado</span>
+            </div>
+        </div>
+        </section>
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <p>Tem algum projeto em mente ou quer trocar uma ideia? Estou sempre aberto a novas oportunidades</p>
+            <div class="contatos-lista">
+                <div class="contato-item">
+                    <strong>Email</strong>
+                    <span>contato@devportifolio.com</span>
+                </div>
+                 <div class="contato-item">
+                    <strong>Telefone</strong>
+                    <span>(47)99815425</span>
+                </div>
+                 <div class="contato-item">
+                    <strong>Localização</strong>
+                    <span>Blumenau-SC</span>
+                </div>
+            </div>
+            <div class="redes-sociais">
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </section>
+    <footer class="footer">
+        <p>@ 2026 DevPortifólio</p>
+    </footer>
+    <script>
+        let button = Document.getElementyById("hamburguer");
+        const menu = Document.getElementyById("menu");
+
+        button.addEventListener("click",function(){
+            menu.classlister.toggle("ativa");
+        })
+    </script>
 </body>
 </html>
